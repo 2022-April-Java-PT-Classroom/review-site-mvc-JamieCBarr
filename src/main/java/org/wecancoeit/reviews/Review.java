@@ -17,4 +17,8 @@ public class Review {
         this.reviewCategory = reviewCategory;
         this.content = content;
     }
+
+    public Long getId() {
+        return id;
+    }
 }
