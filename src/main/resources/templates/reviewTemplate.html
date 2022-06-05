@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${reviewModel.title}"></title>
 </head>
 <body>
+    <header>
+        <h1 th:text="${reviewModel.title}"></h1>
+    </header>
+    <main>
+        <article>
+            <h2 th:text="${reviewModel.reviewCategory}"></h2>
+            <p th:text="${reviewModel.content}"></p>
+        </article>
 
+        <a href="/reviews">All Reviews</a>
+    </main>
+    
 </body>
 </html>

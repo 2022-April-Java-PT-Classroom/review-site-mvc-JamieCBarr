@@ -11,6 +11,14 @@ public class ReviewRepository {
 
     Map<Long, Review> reviewsList = new HashMap<>();
 
+    //constructor for database
+    public ReviewRepository(){
+        Review review1 = new Review(1L, "title", "/review1Img", "category", "content");
+
+        reviewsList.put(review1.getId(), review1);
+    }
+
+    //testing constructor
     public ReviewRepository(Review...reviewsToAdd) {
         for (Review reviewToAdd : reviewsToAdd) {
             reviewsList.put(reviewToAdd.getId(), reviewToAdd);
