@@ -21,4 +21,20 @@ public class Review {
     public Long getId() {
         return id;
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getImageURL() {
+        return imageURL;
+    }
+
+    public String getReviewCategory() {
+        return reviewCategory;
+    }
+
+    public String getContent() {
+        return content;
+    }
 }
