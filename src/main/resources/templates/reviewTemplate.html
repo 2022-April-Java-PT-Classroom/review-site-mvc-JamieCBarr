@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title th:text="${reviewModel.title}"></title>
+    <title th:text="${reviewModel.title}">Review Title ...</title>
 </head>
 <body>
     <header>
-        <h1 th:text="${reviewModel.title}"></h1>
+        <h1 th:text="${reviewModel.title}">Review Title ...</h1>
     </header>
     <main>
         <article>
-            <h2 th:text="${reviewModel.reviewCategory}"></h2>
-            <p th:text="${reviewModel.content}"></p>
+            <h2 th:text="${reviewModel.reviewCategory}">Review Category ...</h2>
+            <img th:src="${reviewModel.imageURL}">
+            <p th:text="${reviewModel.content}">Review Content ...</p>
         </article>
 
         <a href="/reviews">All Reviews</a>

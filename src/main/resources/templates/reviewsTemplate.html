@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{reviewsTemplateStyle.css}">
     <title>All Reviews</title>
 </head>
 <body>
@@ -12,7 +13,7 @@
     </header>
     <main>
         <ul>
-            <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a></li>
+            <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.title}">Review Title...</a></li>
         </ul>
     </main>
 </body>
