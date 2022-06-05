@@ -24,11 +24,10 @@ public class ReviewControllerMvcTest {
 
     @Mock
     private Review review1 = new Review(1L, "title1", "imageURL1", "reviewCategory1", "content1");
+    private Long review1Id = 1L;
 
     @Mock
     private Review review2 = new Review(2L, "title2", "imageURL2", "reviewCategory2", "content2");
-
-    private Long review1Id = 1L;
 
     @Test
     public void shouldBeOkForAllReviewsInTheReviewsTemplate() throws Exception{
@@ -54,5 +53,10 @@ public class ReviewControllerMvcTest {
     public void shouldFindReview1InModel() throws Exception{
         when(reviewRepo.findOne(review1Id)).thenReturn(review1);
         mockMvc.perform(get("/review?id=1")).andExpect(model().attribute("reviewModel", review1));
+    }
+
+    @Test
+    public void shouldBeNotFoundForRequestNotInModel() throws Exception{
+        mockMvc.perform(get("/review?id=3")).andExpect(status().isNotFound());
     }
 }

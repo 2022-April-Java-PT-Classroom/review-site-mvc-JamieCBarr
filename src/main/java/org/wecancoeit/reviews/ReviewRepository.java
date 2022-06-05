@@ -13,7 +13,7 @@ public class ReviewRepository {
 
     //constructor for database
     public ReviewRepository(){
-        Review review1 = new Review(1L, "title", "/review1Img", "category", "content");
+        Review review1 = new Review(1L, "title", "test1.jpg", "category", "content");
 
         reviewsList.put(review1.getId(), review1);
     }
