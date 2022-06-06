@@ -1,0 +1,37 @@
+:root{
+    --bg-color: rgb(1, 1, 36);
+    --primary-color: rgb(216, 130, 0);
+    --secondary-color: rgb(28, 25, 201);
+    --tertiary-color: rgb(109, 79, 79);
+    --font-serif: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --font-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    background-color: var(--bg-color);
+    line-height: 2em;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+article, article *{
+    background-color: var(--tertiary-color);
+}
+
+article h2, article p{
+    color: var(--secondary-color);
+}
+
+a {
+    color: var(--secondary-color);
+}
+
+a:hover {
+    color: var(--primary-color);
+}
