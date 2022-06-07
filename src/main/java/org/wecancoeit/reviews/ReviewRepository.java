@@ -24,7 +24,16 @@ public class ReviewRepository {
 
         reviewsList.put(review1.getId(), review1);
 
+        Review review2 = new Review(2L, "Eldritch Horror", "eldritchHorrorImg.jpg", "Board Game",
+        "Eldritch Horror is a complex, cooperative board game. You select a team of psychics, warriors, and spies " + 
+        "to hunt down one of several monstrous creatures including Cthulhu itself. This game is quite the undertaking, " + 
+        "so be sure to set aside a whole evening to complete all three phases of the game. Despite the daunting appearance " + 
+        "of over a dozen different decks of cards and nearly as many types of counters, the core mechanics are easy to grasp " + 
+        "and play will quickly begin to flow along smoothly; most of the games complexity is dedicated to intricate " + 
+        "storytelling rather than rules. With that said, while playing the game isn't too difficult, winning it certainly " + 
+        "isn't easy. Be very prepared for your characters to die, and to have fun along the way.");
 
+        reviewsList.put(review2.getId(), review2);
     }
 
     //testing constructor
