@@ -14,13 +14,18 @@
     </header>
     <main>
         <article>
-            <h2 th:text="${reviewModel.reviewCategory}">Review Category ...</h2>
-            <img th:src="${reviewModel.imageURL}">
-            <p th:text="${reviewModel.content}">Review Content ...</p>
+            <h2 th:text="'Category: ' + ${reviewModel.reviewCategory}">Review Category ...</h2>
+            <div>
+                <img th:src="${reviewModel.imageURL}">
+                <p th:text="${reviewModel.content}">Review Content ...</p>
+            </div>    
         </article>
 
         <a href="/reviews">All Reviews</a>
     </main>
     
 </body>
+<footer>
+    <h7>Acquisitions, Inc. 2022</h7>
+</footer>
 </html>

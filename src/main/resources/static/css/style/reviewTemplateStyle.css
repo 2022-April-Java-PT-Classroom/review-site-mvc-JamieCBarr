@@ -24,8 +24,12 @@ article, article *{
     background-color: var(--tertiary-color);
 }
 
-article h2, article p{
+article h2{
     color: var(--secondary-color);
+}
+
+article p{
+    color: black;
 }
 
 a {
@@ -33,5 +37,9 @@ a {
 }
 
 a:hover {
+    color: var(--primary-color);
+}
+
+footer h7{
     color: var(--primary-color);
 }

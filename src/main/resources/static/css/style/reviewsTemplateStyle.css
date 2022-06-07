@@ -37,3 +37,7 @@ li a{
 li a:hover {
     color: var(--primary-color);
 }
+
+footer h7{
+    color: var(--primary-color);
+}
