@@ -1,3 +1,9 @@
+Navigate to the /reviews page to see a list of all reviews and their categories.
+Click on the name of any product to view its individual page with picture and review.
+From an individual review page, click the "All Reviews" link at the bottom to return to 
+the /reviews page with the complete list of reviews.
+
+
 # Reviews Site
 
 ## Module 3 Project
