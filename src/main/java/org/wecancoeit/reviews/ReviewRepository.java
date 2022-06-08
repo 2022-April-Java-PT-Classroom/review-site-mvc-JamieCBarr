@@ -19,8 +19,8 @@ public class ReviewRepository {
         "as possible before they ultimately die. The see-through card design is both beautiful and brilliant," + 
         "enabling the core mechanic of card stacking to change the effects of cards underneath. There is a drawback " + 
         "to this element, however, as it is easy to see what types of cards the other players are holding. " + 
-        "This doesn't stop it from being a fun game, but it does limit how competitively it can be approached.\n\n" + 
-        "Image: \"Gloom. #gloom #game #cards\" by Moses Noghbaudie is licensed under CC BY-NC-SA 2.0.");
+        "This doesn't stop it from being a fun game, but it does limit how competitively it can be approached." + 
+        "\n\nImage: \"Gloom. #gloom #game #cards\" by Moses Noghbaudie is licensed under CC BY-NC-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=openverse");
 
         reviewsList.put(review1.getId(), review1);
 
@@ -34,6 +34,26 @@ public class ReviewRepository {
         "isn't easy. Be very prepared for your characters to die, and to have fun along the way.");
 
         reviewsList.put(review2.getId(), review2);
+
+        Review review3 = new Review(3L, "Bont Prostar Skates", "bontImg.jpg", "Athletic Gear", 
+        "Lighter, Stronger, Faster: these skates certainly live up to the Bont slogan. These solid beginner quads " + 
+        "are ready to go right out of the box. They're comfortable even for long or strenuous sessions, with impressive " + 
+        "performance and durability. An excellent all-around choice for a first set of skates.");
+
+        reviewsList.put(review3.getId(), review3);
+
+        Review review4 = new Review(4L, "the Solitude of Prime Numbers", "solitudeImg.jpg", "Book",
+        "A fantastic character driven story from cover to cover. A pair of misfits weave through each other's lives in a haunting tale " +
+        "of tragedy, longing, and lonliness. An unforgettable must read for anyone who's ever felt they don't quite fit in." + 
+        "\n\nImage: \"Bench Book\" by Robert Burdock is licensed under CC BY-NC-ND 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nd-nc/2.0/jp/?ref=openverse");
+
+        reviewsList.put(review4.getId(), review4);
+
+        Review review5 = new Review(5L, "Coxila Funny Cat Shower Curtain", "curtainImg.jpg", "Decor",
+        "Durable. Functional. Beautiful. What more can be said about this masterpiece? Transform your bathroom into a work of art. " +
+        "No water will dare escape the shower on Pusseidon's watch.\n11 stars out of 5.");
+
+        reviewsList.put(review5.getId(), review5);
     }
 
     //testing constructor
