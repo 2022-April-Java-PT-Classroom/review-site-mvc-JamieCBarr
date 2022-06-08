@@ -28,7 +28,13 @@ article h2{
     color: var(--secondary-color);
 }
 
+article div{
+    padding-top: 1em;
+    border-top: 3px dashed var(--primary-color);
+}
+
 article p{
+    white-space: pre-line;
     color: black;
 }
 
